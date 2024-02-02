@@ -1,0 +1,28 @@
+
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th>
+  
+            listes des salles
+         
+    </th>
+    <th>
+    
+    action
+    </th>
+          
+    </tr>
+
+ 
+</thead>
+<tbody>
+    <tr *ngFor=" let salle of  salles">
+        <td><h4>{{salle.nom}}</h4></td>
+        <td> <a (click)="select(salle)" class="btn btn-outline-primary" >Détails</a> </td>
+    </tr>
+    
+
+</tbody>
+</table>
+
